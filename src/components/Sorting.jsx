@@ -4,8 +4,8 @@ export default function Sorting({ onSort }) {
   const [sort, setSort] = useState("");
   // console.log(sort);
   const handleChange = () => {
-    onSort(sort);
     setSort(event.target.value);
+    onSort(sort);
   };
 
   return (
