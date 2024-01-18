@@ -2,7 +2,6 @@ import { useState } from "react";
 
 export default function Sorting({ onSort }) {
   const [sort, setSort] = useState("");
-  // console.log(sort);
   const handleChange = () => {
     setSort(event.target.value);
     onSort(sort);

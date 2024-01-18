@@ -27,7 +27,6 @@ export default function App() {
     );
   };
   const handleSort = (sort) => {
-    console.log(sort);
     if (sort === "name_asc") {
       const sorted = [...books].sort((a, b) =>
         a.title.toLowerCase()[sort] < b.title.toLowerCase()[sort] ? 1 : -1
